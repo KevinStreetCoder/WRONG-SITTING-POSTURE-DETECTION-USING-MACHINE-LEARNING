@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- for drawing charts -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <title>HALTUNG | Home</title>
+
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: #c1e4f5;
+        }
+        
+        .topnav a {
+            float: left;
+            color: grey;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            cursor: pointer;
+        }
+        
+        .topnav a:hover {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .topnav a.active {
+            background-color: #5da6c9;
+            color: black;
+            border-radius: 10px;
+        }
+        
+        .background-image {
+            background-image: url('developer.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            width: 500px;
+            height: 80vh;
+            float: left;
+            margin-left: 30px;
+        }
+        
+        .right {
+            position: absolute;
+            right: 30px;
+            top: 100px;
+            width: 500px;
+            /*border: 3px solid #73AD21;*/
+            /*padding: 50px;*/
+            float: right;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+            margin-top: 75px;
+        }
+        
+        .buttons button {
+            display: block;
+            text-align: center;
+            margin-bottom: 35px;
+            /*padding-top: 20px;*/
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            background-color: #c1e4f5;
+            border: none;
+            border-radius: 15px;
+            padding: 10px;
+            width: 200px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        
+        .buttons {
+            padding-left: 170px;
+            padding-top: 35px;
+        }
+        
+        .buttons button:hover {
+            background-color: #5da6c9;
+            color: white;
+        }
+        
+        .topnav a:hover {
+            cursor: pointer;
+        }
+        
+        .nav_link {
+            margin-left: 65%;
+            padding-top: 15px;
+        }
+        
+        .header_title {
+            padding: 0 50px;
+            float: left;
+        }
+        
+        .header_title p {
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav">
+
+        <div class="header_title">
+            <p>HALTUNG Detection</p>
+        </div>
+
+        <div class="nav_link">
+            <a href="home.html">Home</a>
+            <a class="active" href="statistics.html">Statistics</a>
+            <a href="about.html">About</a>
+            <a onclick=logout()>Logout</a>
+        </div>
+
+    </div>
+    <br>
+    <br>
+
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        <br>
+        <br>
+        <div id="chartContainerDays" style="height: 300px; width: 100%;"></div>
+        <br>
+        <br>
+
+                    
+        <script type="text/javascript">
+
+        window.onload = function () {
+            getStatistics()    
+        }
+        </script>
+
+    <script src="js/haltung.js"></script>
+</body>
+
+</html>

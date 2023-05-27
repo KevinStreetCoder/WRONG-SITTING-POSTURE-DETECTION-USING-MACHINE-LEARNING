@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALTUNG</title>
+    <style>
+        .background-image {
+            background-image: url('first.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            width: 680px;
+            height: 95vh;
+            float: left;
+        }
+        
+        .right {
+            position: absolute;
+            right: 30px;
+            top: 100px;
+            width: 500px;
+            /*border: 3px solid #73AD21;*/
+            /*padding: 50px;*/
+            float: right;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        
+        .buttons button {
+            display: block;
+            text-align: center;
+            margin-bottom: 35px;
+            /*padding-top: 20px;*/
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            background-color: #c1e4f5;
+            border: none;
+            border-radius: 15px;
+            padding: 10px;
+            width: 200px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        
+        .buttons {
+            padding-left: 170px;
+            padding-top: 30px;
+        }
+        
+        .buttons button:hover {
+            background-color: #5da6c9;
+            color: white;
+        }
+        
+        .right .p {
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+
+    <div class="right">
+        <p class="p">HALTUNG Detection</p>
+
+        <div class="buttons">
+            <button class="button" onclick="window.location.href='login.html'">Login</button>
+            <button class="button" onclick="window.location.href='signup.html'">Signup</button>
+        </div>
+    </div>
+    
+</body>
+</html>
